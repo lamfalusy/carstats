@@ -4,17 +4,26 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.carstats</groupId>
     <artifactId>web</artifactId>
     <packaging>war</packaging>
 	
 	<parent>
 		<groupId>com.carstats</groupId>
 		<artifactId>parent</artifactId>
-		<version>${carstats-parent-version}</version>
+		<version>0.1</version>
 	</parent>
 	
     <dependencies>
 
     </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+    
 </project>

@@ -7,12 +7,12 @@
     <groupId>com.carstats</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>${carstats-parent-version}</version>
+    <version>0.1</version>
     <name>CarStats Parent Project</name>
 
 	<properties>
 		<carstats-parent-version>0.1</carstats-parent-version>
-		<java.version>1.7</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	
 	<parent>
@@ -40,6 +40,11 @@
 				<artifactId>service</artifactId>
 				<version>${carstats-parent-version}</version>
 			</dependency>
+			<dependency>
+	            <groupId>org.springframework.boot</groupId>
+	            <artifactId>spring-boot-starter-web</artifactId>
+	            <version>${spring-boot.version}}</version>
+	        </dependency>
 		</dependencies>
 	</dependencyManagement>
 	
